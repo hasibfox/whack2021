@@ -1,0 +1,46 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 50px;
+  width: 100%;
+  min-width: 100px;
+  max-width: 20vw;
+  max-height: 40vh;
+  background-color: rgb(248, 180, 180);
+  z-index: 1;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.prod-info h2 {
+  text-decoration: underline;
+  font-weight: 100;
+}
+.apple {
+  margin-top: 10px;
+}
+button {
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  border: 2px solid;
+  margin-top: 10px;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+button:hover {
+  background: rgb(228, 70, 70);
+  color: white;
+}
+
+.prod-price {
+  padding: 10px;
+  font-size: 25px;
+}

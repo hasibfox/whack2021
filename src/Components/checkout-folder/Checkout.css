@@ -1,0 +1,22 @@
+.checkout-container {
+  background: rgb(128, 131, 124);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+.subtotal {
+  padding: 1vw;
+  height: 50vh;
+  width: 60vw;
+  background: rgba(255, 255, 255, 0.747);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 2fr;
+  border-radius: 10px;
+}
+.total {
+  grid-column: 2;
+  grid-row: 4;
+}

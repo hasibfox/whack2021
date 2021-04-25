@@ -1,0 +1,259 @@
+.sign-container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  transition: 1s all ease-in-out;
+  animation: backgroundChange 5s infinite;
+  animation-direction: alternate;
+  height: 120vh;
+}
+.sign-nav {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  margin-top: 1vh;
+  background: transparent;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-nav img {
+  padding-left: 3vw;
+}
+.already-registered-button {
+  padding-right: 3vw;
+}
+.okay {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: rgb(165, 70, 70);
+  opacity: 0.5;
+}
+.left,
+.inright {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url("http://newsletter.blogs.wesleyan.edu/files/2014/08/cam_msc_2014-0821195619.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.left h1 {
+  margin-top: 25vh;
+  font-size: 30px;
+  color: white;
+  padding: 1vw;
+}
+.left img {
+  height: 30vh;
+  z-index: 200;
+}
+.already {
+  height: 20vh;
+  margin-bottom: -90px;
+}
+.signup-box,
+.signin-box {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 18vh;
+  height: 600px;
+  width: 70vw;
+  max-width: 80%;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  background: white;
+  z-index: 1;
+  border-radius: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -webkit-box-shadow: 0px 0px 18px 6px rgba(50, 89, 103, 0.49);
+  -moz-box-shadow: 0px 0px 18px 6px rgba(50, 89, 103, 0.49);
+  box-shadow: 0px 0px 18px 6px rgba(50, 89, 103, 0.49);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-form input {
+  border-radius: 5px;
+  width: 85%;
+  padding: 10px;
+  margin: 10px;
+  transition: 1s ease-in-out;
+}
+
+.box-title {
+  font-size: 30px;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}
+.sign-logo {
+  height: 65px;
+}
+.sign-up-btn {
+  margin-top: 10px;
+  width: 100%;
+}
+.forgot h3 {
+  font-size: 15px;
+  text-align: left;
+  margin-left: 20px;
+}
+.policy {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 2vh;
+}
+.sign-form {
+  display: flex;
+  flex-direction: column;
+}
+.sign-form h3 {
+  cursor: pointer;
+}
+.login-form h2 {
+  margin-bottom: 3vh;
+}
+.login-form h3,
+.signin-form h3 {
+  text-align: left;
+  margin-left: 2vh;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 1.9vh;
+}
+.login-form input {
+  border-radius: 5px;
+  width: 85%;
+  padding: 10px;
+  transition: 1s ease-in-out;
+}
+/*Sign In*/
+.signin-box {
+  height: 400px;
+  width: 60vw;
+  max-width: 80%;
+  grid-template-columns: 2fr 1fr;
+}
+.inright {
+  grid-column: 2;
+  grid-row: 1/2;
+  background-image: url("http://wesleyanargus.com/wp-content/uploads/2020/11/Nederlander_weshop1.jpg");
+  border-radius: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inleft {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.inleft h1 {
+  margin-top: 10vh;
+}
+.signin-form {
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  transition: 1s ease-in-out;
+}
+.signin-form p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3vh;
+  font-size: 1rem;
+}
+.signin-form input {
+  border-radius: 5px;
+  margin-bottom: 1vw;
+  width: 85%;
+  padding: 10px;
+  transition: 1s ease-in-out;
+}
+.signin-form h3 {
+  margin-top: 0.5vh;
+  margin-left: 2.5vw;
+}
+.inright h1 {
+  margin-bottom: 2vh;
+  color: white;
+}
+.error-messages {
+  font-size: 15px;
+  text-align: left;
+  margin-left: 1.5vw;
+  margin-top: -5px;
+  color: red;
+}
+@keyframes backgroundChange {
+  from {
+    background: rgb(129, 115, 108);
+  }
+
+  to {
+    background: rgb(224, 179, 126);
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .signup-box,
+  .signin-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .signin-box {
+    width: 50vw;
+    height: 80vh;
+  }
+  .left,
+  .inright {
+    display: none;
+  }
+  .sign-container {
+    height: 150vh;
+  }
+
+  .right,
+  .inleft {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .signup-box {
+    height: 95vh;
+  }
+  .sign-up-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .sign-container {
+    height: 120vh;
+  }
+}
+@media screen and (max-width: 425px) {
+  .signup-box {
+    height: 100vh;
+  }
+
+  .sign-form input {
+    width: 80%;
+  }
+}
